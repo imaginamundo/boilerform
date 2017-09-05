@@ -19,32 +19,34 @@
             <input type="text" placeholder="input text">
         </label>
     </p>
-    
-    <h3>Input search</h3>
+
+    <h3>Select</h3>
     <p>
         <label>
             <span class="label">Label</span>
-            <input type="search" placeholder="input search">
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
         </label>
     </p>
 
-    <h3>Input date</h3>
+    <h3>Input range</h3>
     <p>
         <label>
             <span class="label">Label</span>
-            <input type="date" placeholder="input date">
+            <input type="range">
         </label>
     </p>
 
-    <h3>Input checkbox</h3>
+    <h3>Checkbox & Radio</h3>
     <p>
         <label>
             <input type="checkbox" name="checkbox">
             <span>Label</span>
         </label>
     </p>
-
-    <h3>Input radio</h3>
     <p>
         <label>
             <input type="radio" name="radio">
@@ -58,6 +60,7 @@
     </p>
 
     <h3>Textarea</h3>
+    <p>Always width 100%.</p>
     <p>
         <label>
             <span class="label">Label</span>
@@ -68,6 +71,8 @@
     <h2>Use cases</h2>
     <h3>Inline</h3>
     <p>Add <code>margin-right</code> after each element ignoring last-child.</p>
+    <p>Pros: Can be used in header to simple forms.</p>
+    <p>Cons: Breaks easily in responsive.</p>
     <p class="input-inline">
         <label>
             <input type="text" placeholder="Username">

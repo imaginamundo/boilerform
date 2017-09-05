@@ -22,4 +22,6 @@ Visit https://imaginamundo.github.io/boilerform/
 
 * Colors to buttons (default, danger, success);
 * Color to input feedback;
-* Form variations.
+* Form variations;
+* UX on input range;
+* Navigation on sample page.

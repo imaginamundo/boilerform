@@ -16,6 +16,7 @@ select {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: box-shadow .2s ease-in-out;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none; }
   input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,
   textarea:focus,

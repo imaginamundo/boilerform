@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boilerform</title>
+    <link rel="stylesheet" href="assets/style.min.css">
+</head>
+<body>
+    <h1>Boilerform</h1>
+
+    <h2>Types</h2>
+
+    <h3>Input text</h3>
+    <p>
+        <label>
+            <span class="label">Label</span>
+            <input type="text" placeholder="input text">
+        </label>
+    </p>
+    
+    <h3>Input search</h3>
+    <p>
+        <label>
+            <span class="label">Label</span>
+            <input type="search" placeholder="input search">
+        </label>
+    </p>
+
+    <h3>Input date</h3>
+    <p>
+        <label>
+            <span class="label">Label</span>
+            <input type="date" placeholder="input date">
+        </label>
+    </p>
+
+    <h3>Input checkbox</h3>
+    <p>
+        <label>
+            <input type="checkbox" name="checkbox">
+            <span>Label</span>
+        </label>
+    </p>
+
+    <h3>Input radio</h3>
+    <p>
+        <label>
+            <input type="radio" name="radio">
+            <span>Label</span>
+        </label>
+    </p>
+
+    <h3>Button</h3>
+    <p>
+        <button>Label</button>
+    </p>
+
+    <h3>Textarea</h3>
+    <p>
+        <label>
+            <span class="label">Label</span>
+            <textarea></textarea>
+        </label>
+    </p>
+
+    <h2>Use cases</h2>
+    <h3>Inline</h3>
+    <p>Add <code>margin-right</code> after each element ignoring last-child.</p>
+    <p class="input-inline">
+        <label>
+            <input type="text" placeholder="Username">
+        </label>
+        <label>
+            <input type="password" placeholder="Password">
+        </label>
+        <label>
+            <input type="checkbox">
+            <span>Remember me</span>
+        </label>
+        <button>Login</button>
+    </p>
+
+    <h3>Block</h3>
+    <p>Use <code>p</code> default margin.</p>
+    <p>Block input with class <code>.input-block</code> on parent</p>
+    <p>Best for complex forms and mobile.</p>
+    <div class="form-block">
+        <p>
+            <label>
+                <span class="label">Username</span>
+                <input type="text">
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="label">Password</span>
+                <input type="password">
+                <small class="label-helper">Your password must be at least 4 characters.</small>
+            </label>
+        </p>
+        <p>
+            <label class="input-block">
+                <span class="label">Site</span>
+                <input type="site">
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox">
+                <span>Remember me</span>
+            </label>
+        </p>
+        <p>
+            <button>Login</button>
+        </p>
+    </div>
+
+    <h3>Table</h3>
+    <p>Need fix, tried to do exactly what flex did.</p>
+    <p class="input-table">
+        <label>
+            <input type="text" placeholder="User">
+        </label>
+        <label>
+            <input type="password" placeholder="Password">
+        </label>
+        <label>
+            <input type="checkbox">
+            <span>Remember me</span>
+        </label>
+        <span class="input-block">
+            <button>Login</button>
+        </span>
+    </p>
+
+    <h3>Flex</h3>
+    <p>Wrap every element you want to stretch equaly inside a <code>label</code>.</p>
+    <p class="input-flex">
+        <label>
+            <input type="text" placeholder="User">
+        </label>
+        <label>
+            <input type="password" placeholder="Password">
+        </label>
+        <label>
+            <input type="checkbox">
+            <span>Remember me</span>
+        </label>
+        <button>Login</button>
+    </p>
+
+    <h2>Input feedback</h2>
+    <h3>Inline</h3>
+    <p>Inline forms doen't work well with <code>.label-helper</code>, but you can use <code>.input-error</code> to create a visual feedback from error.</p>
+    <p>
+        <label>
+            <span class="label">Username</span>
+            <input type="text" class="input-error">
+            <span class="label-error">Error label</span>
+        </label>
+    </p>
+
+    <h3>Block</h3>
+    <p>Give hints to the user, recommended short texts.</p>
+    <p>Best for complex forms and mobile.</p>
+    <div class="form-block">
+        <p>
+            <label>
+                <span class="label">Username</span>
+                <input type="text" class="input-error">
+                <span class="label-error">Error label</span>
+                <span class="label-helper">Helper label</span>
+            </label>
+        </p>
+    </div>
+</body>
+</html>

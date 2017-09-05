@@ -1,0 +1,20 @@
+{
+  "name": "boilerform",
+  "version": "1.0.0",
+  "description": "Framework for form elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "forms",
+    "css"
+  ],
+  "author": "Diogo Ferreira Fernandes",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

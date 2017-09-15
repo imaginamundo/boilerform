@@ -48,7 +48,7 @@ input[type="search"] {
     &::-webkit-search-decoration {
         -webkit-appearance: none;
     }
-    
+
 }
 input[type="range"] {
     -webkit-appearance: none;
@@ -173,10 +173,9 @@ button {
     &:hover {
         background: $button-background-hover;
     }
-    &:focus,
     &:active {
         top: -1px;
-        
+
         box-shadow: 0 1px 0 $button-shadow;
     }
 }

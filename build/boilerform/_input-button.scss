@@ -40,7 +40,7 @@
 @each $key, $val in $buttons {
     $background: nth($val, 1);
     $color: nth($val, 2);
-    .button-#{$key}-bordered {
+    .button-#{$key}-outline {
         background: transparent;
         border-color: $background;
 

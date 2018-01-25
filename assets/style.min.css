@@ -172,75 +172,75 @@ select.input-default {
     border-color: transparent;
     text-decoration: underline; }
 
-.button-primary-bordered {
+.button-primary-outline {
   background: transparent;
   border-color: #0af;
   color: #0af; }
-  .button-primary-bordered:hover {
+  .button-primary-outline:hover {
     background: #0af;
     color: #fff; }
 
-.button-secondary-bordered {
+.button-secondary-outline {
   background: transparent;
   border-color: #666;
   color: #666; }
-  .button-secondary-bordered:hover {
+  .button-secondary-outline:hover {
     background: #666;
     color: #fff; }
 
-.button-success-bordered {
+.button-success-outline {
   background: transparent;
   border-color: #0b0;
   color: #0b0; }
-  .button-success-bordered:hover {
+  .button-success-outline:hover {
     background: #0b0;
     color: #fff; }
 
-.button-danger-bordered {
+.button-danger-outline {
   background: transparent;
   border-color: #f00;
   color: #f00; }
-  .button-danger-bordered:hover {
+  .button-danger-outline:hover {
     background: #f00;
     color: #fff; }
 
-.button-warning-bordered {
+.button-warning-outline {
   background: transparent;
   border-color: #fd0;
   color: #fd0; }
-  .button-warning-bordered:hover {
+  .button-warning-outline:hover {
     background: #fd0;
     color: #000; }
 
-.button-info-bordered {
+.button-info-outline {
   background: transparent;
   border-color: #0df;
   color: #0df; }
-  .button-info-bordered:hover {
+  .button-info-outline:hover {
     background: #0df;
     color: #fff; }
 
-.button-light-bordered {
+.button-light-outline {
   background: transparent;
   border-color: #f8f8f8;
   color: #f8f8f8; }
-  .button-light-bordered:hover {
+  .button-light-outline:hover {
     background: #f8f8f8;
     color: #000; }
 
-.button-dark-bordered {
+.button-dark-outline {
   background: transparent;
   border-color: #333;
   color: #333; }
-  .button-dark-bordered:hover {
+  .button-dark-outline:hover {
     background: #333;
     color: #fff; }
 
-.button-link-bordered {
+.button-link-outline {
   background: transparent;
   border-color: transparent;
   color: transparent; }
-  .button-link-bordered:hover {
+  .button-link-outline:hover {
     background: transparent;
     color: blue; }
 

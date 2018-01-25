@@ -1,0 +1,17 @@
+[type="radio"].input-default,
+[type="checkbox"].input-default {
+    height: $input-radio-check-size;
+    width: $input-radio-check-size;
+    padding: 0;
+    vertical-align: middle;
+    margin: 0 .5em .2em 0;
+    &:checked {
+        background: $input-border-color-focus;
+    }
+    &:not(:checked) {
+        border-color: $input-border-color;
+    }
+}
+[type="radio"].input-default {
+    border-radius: 50%;
+}

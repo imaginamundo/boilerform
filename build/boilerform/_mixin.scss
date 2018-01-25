@@ -1,0 +1,32 @@
+@mixin clear-input-style() {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    &::-webkit-search-decoration {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin input-style() {
+    padding-right: $input-padding;
+    padding-left: $input-padding;
+    height: $input-height;
+    box-sizing: border-box;
+
+    border-style: solid;
+    border-width: $input-border-size;
+    border-color: $input-border-color;
+    border-radius: $input-border-radius;
+
+    font-family: $input-font;
+    font-size: $input-font-size;
+    &:focus,
+    &:checked {
+        border-color: $input-border-color-focus;
+    }
+}

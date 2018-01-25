@@ -1,15 +1,87 @@
-@import 'form';
+@import 'boilerform/index';
 
 body {
     padding: 12px;
     margin: auto;
-    max-width: 680px;
+    max-width: 860px;
     box-sizing: border-box;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-code {
+header {
+    text-align: center;
+}
+code,
+.code {
     padding: 2px 4px;
-    background: #eee;
+    background: #f3f3f3;
     border: 1px solid #aaa;
     border-radius: 3px;
+    overflow-y: auto;
+}
+
+.login-form {
+    max-width: 200px;
+    margin: auto;
+}
+
+.best-practice {
+    display: flex;
+    + h3 {
+        margin-top: 4em;
+    }
+    p:first-child {
+        margin-top: 0;
+    }
+}
+.best-practice-dont,
+.best-practice-do {
+    position: relative;
+    flex: 1;
+    &:after {
+        position: absolute;
+        top: 100%;
+        display: block;
+        width: calc(100% - 1em);
+        border-top-width: 10px;
+        border-top-style: solid;
+        font-weight: bold;
+    }
+}
+.best-practice-dont {
+    padding-right: 1em;
+    &:after {
+        content: "Don't";
+        color: #f00;
+        border-top-color: #f00;
+    }
+}
+.best-practice-do {
+    padding-left: 1em;
+    &:after {
+        content: 'Do';
+        color: #0b0;
+        border-top-color: #0b0;
+    }
+}
+
+.inline-label {
+    label {
+        + label {
+            margin-left: 2em;
+        }
+    }
+}
+dt,
+dd {
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 1em;
+    + dt {
+        margin-top: 1.5em;
+    }
 }

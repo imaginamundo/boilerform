@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boilerform</title>
+    <link rel="stylesheet" href="assets/style.min.css">
+</head>
+<body>
+    <header>
+        <h1>Boilerform</h1>
+        <p>CSS framework for simple forms</p>
+        <nav class="menu">
+            <p>
+                <a href="index.html">Input types</a>
+                <a href="use-cases.html">Samples</a>
+                <a href="best-practices.html">Best practices</a>
+            </p>
+        </nav>
+    </header>
+
+    <hr />
+
+    <h2>Use cases</h2>
+    <form class="login-form">
+        <h3>Login</h3>
+        <p>
+            <label>
+                <span class="input-label">Username</span>
+                <input type="text" placeholder="Insert your username" class="input-default input-block" />
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="input-label">Password</span>
+                <input type="text" placeholder="Insert your password" class="input-default input-block input-error" />
+                <span class="input-help">Wrong password, try again</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="input-default">
+                <span class="input-label">Remember password</span>
+            </label>
+        </p>
+        <p>
+            <button class="button button-secondary">Cancel</button>
+            <button class="button button-success">Login</button>
+        </p>
+    </form>
+    <h4>Login form code:</h4>
+    <pre class="code">
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Username&lt;/span&gt;
+        &lt;input type="text" placeholder="Insert your username" class="input-default input-block" /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Password&lt;/span&gt;
+        &lt;input type="text" placeholder="Insert your username" class="input-default input-block input-error" /&gt;
+        &lt;span class="input-help"&gt;Wrong password, try again&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" class="input-default"&gt;
+        &lt;span class="input-label"&gt;Remember password&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;button class="button button-secondary"&gt;Cancel&lt;/button&gt;
+    &lt;button class="button button-success"&gt;Login&lt;/button&gt;
+&lt;/p&gt;</pre>
+
+    <form class="register-form">
+        <h3>Register</h3>
+        <p>
+            <label>
+                <span class="input-label">Username</span>
+                <input type="text" placeholder="Insert your username" class="input-default input-block" />
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="input-label">E-mail</span>
+                <input type="email" placeholder="Insert your e-mail" class="input-default input-block" />
+            </label>
+        </p>
+        <p>Select gender</p>
+        <p>
+            <label>
+                <input type="radio" name="gender" class="input-default" />
+                <span class="input-label">Masculine</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" class="input-default" />
+                <span class="input-label">Feminine</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="gender" class="input-default" />
+                <span class="input-label">Other</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="input-label">Birthday</span>
+                <br />
+                <input type="date" class="input-default" placeholder="dd/mm/aaaa" />
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="input-label">Select country</span>
+                <select class="input-default input-block">
+                    <option disabled selected>Select your country</option>
+                    <option>Brazil</option>
+                    <option>Trinidad Tobago</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="input-label">Password</span>
+                <input type="text" placeholder="Insert your password" class="input-default input-block" />
+            </label>
+        </p>
+        <p>
+            <label>
+                <span class="input-label">Suggestion</span>
+                <textarea class="input-default input-block" rows="10" placeholder="Insert you suggestion (Optional)"></textarea>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="input-default input-error">
+                <span class="input-label">I agree with <a href="">terms of use</a></span>
+                <span class="input-help">Obligatory field</span>
+            </label>
+        </p>
+        <p>
+            <button class="button button-secondary">Cancel</button>
+            <button class="button button-primary">Register</button>
+        </p>
+    </form>
+
+    <h4>Register form code:</h4>
+    <pre class="code">
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Username&lt;/span&gt;
+        &lt;input type="text" placeholder="Insert your username" class="input-default input-block" /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;E-mail&lt;/span&gt;
+        &lt;input type="email" placeholder="Insert your e-mail" class="input-default input-block" /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;Select gender&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="gender" class="input-default" /&gt;
+        &lt;span class="input-label"&gt;Masculine&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="gender" class="input-default" /&gt;
+        &lt;span class="input-label"&gt;Feminine&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;input type="radio" name="gender" class="input-default" /&gt;
+        &lt;span class="input-label"&gt;Other&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Birthday&lt;/span&gt;
+        &lt;br /&gt;
+        &lt;input type="date" class="input-default" placeholder="dd/mm/aaaa" /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Select country&lt;/span&gt;
+        &lt;select class="input-default input-block"&gt;
+            &lt;option disabled selected&gt;Select your country&lt;/option&gt;
+            &lt;option&gt;Brazil&lt;/option&gt;
+            &lt;option&gt;Trinidad Tobago&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Password&lt;/span&gt;
+        &lt;input type="text" placeholder="Insert your password" class="input-default input-block" /&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;span class="input-label"&gt;Suggestion&lt;/span&gt;
+        &lt;textarea class="input-default input-block" rows="10" placeholder="Insert you suggestion (Optional)"&gt;&lt;/textarea&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;label&gt;
+        &lt;input type="checkbox" class="input-default input-error"&gt;
+        &lt;span class="input-label"&gt;I agree with &lt;a href=""&gt;terms of use&lt;/a&gt;&lt;/span&gt;
+        &lt;span class="input-help"&gt;Obligatory field&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;button class="button button-secondary"&gt;Cancel&lt;/button&gt;
+    &lt;button class="button button-primary"&gt;Register&lt;/button&gt;
+&lt;/p&gt;</pre>
+</body>
+</html>

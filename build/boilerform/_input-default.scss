@@ -1,0 +1,4 @@
+.input-default {
+    @include clear-input-style();
+    @include input-style();
+}

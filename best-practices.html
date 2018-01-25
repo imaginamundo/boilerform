@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boilerform</title>
+    <link rel="stylesheet" href="assets/style.min.css">
+</head>
+<body>
+    <header>
+        <h1>Boilerform</h1>
+        <p>CSS framework for simple forms</p>
+        <nav class="menu">
+            <p>
+                <a href="index.html">Input types</a>
+                <a href="use-cases.html">Samples</a>
+                <a href="best-practices.html">Best practices</a>
+            </p>
+        </nav>
+    </header>
+    <hr />
+
+    <h2>Best practices</h2>
+
+    <h3>Placeholder as label</h3>
+    <p>Placeholder is base on a short memory, when the user input data, they will not be able to see what is this input for, unless he delete the content.</p>
+    <div class="best-practice">
+        <div class="best-practice-dont">
+            <p>
+                <label>
+                    <input type="text" placeholder="Username" class="input-default input-block label-margin-top" style="margin-top: 26px;" />
+                </label>
+            </p>
+        </div>
+        <div class="best-practice-do">
+            <p>
+                <label>
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="Insert username" class="input-default input-block" />
+                </label>
+            </p>
+        </div>
+    </div>
+
+    <h3>Input without placeholder</h3>
+    <p>Placeholder is a good hint to user identify and fill the input.</p>
+    <div class="best-practice">
+        <div class="best-practice-dont">
+            <p>
+                <label>
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="" class="input-default input-block" />
+                </label>
+            </p>
+        </div>
+        <div class="best-practice-do">
+            <p>
+                <label>
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="Insert username" class="input-default input-block" />
+                </label>
+            </p>
+        </div>
+    </div>
+
+    <h3>Obligatory fields with asterisk</h3>
+    <p>Is better show which field is optional than which one is necessary.</p>
+    <div class="best-practice">
+        <div class="best-practice-dont">
+            <p>
+                <label>
+                    <span class="input-label">Username <span style="color: #f00;">*</span></span>
+                    <input type="text" placeholder="Insert username" class="input-default input-block" />
+                </label>
+            </p>
+        </div>
+        <div class="best-practice-do">
+            <p>
+                <label>
+                    <span class="input-label">Username <small>(Optional)</small></span>
+                    <input type="text" placeholder="Insert username" class="input-default input-block" />
+                </label>
+            </p>
+        </div>
+    </div>
+
+    <h3>Inline checkboxes or radio</h3>
+    <p>Increase dificulty to read and is not mobile friendly.</p>
+    <div class="best-practice">
+        <div class="best-practice-dont">
+            <p>Select your favorite food</p>
+            <p class="inline-label">
+                <label>
+                    <input type="checkbox" class="input-default" />
+                    <span class="input-label">Vatapá</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="input-default" />
+                    <span class="input-label">Tapioca</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="input-default" />
+                    <span class="input-label">Cheese bread</span>
+                </label>
+            </p>
+        </div>
+        <div class="best-practice-do">
+            <p>Select your favorite food</p>
+            <p>
+                <label>
+                    <input type="checkbox" class="input-default" />
+                    <span class="input-label">Vatapá</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="input-default" />
+                    <span class="input-label">Tapioca</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" class="input-default" />
+                    <span class="input-label">Cheese bread</span>
+                </label>
+            </p>
+        </div>
+    </div>
+    <h3>References</h3>
+    <dl>
+        <dt>Design Better Forms by <a href="https://twitter.com/CoyleAndrew" target="_blank">Andrew Coyle</a></dt>
+        <dd>
+            <a href="https://uxdesign.cc/design-better-forms-96fadca0f49c" target="_blank">https://uxdesign.cc/design-better-forms-96fadca0f49c</a>
+        </dd>
+        <dt>Placeholders in Form Fields Are Harmful by <a href="https://twitter.com/kwsherwin" target="_blank">Katie Sherwin</a></dt>
+        <dd>
+            <a href="https://www.nngroup.com/articles/form-design-placeholders/" target="_blank">https://www.nngroup.com/articles/form-design-placeholders/</a>
+        </dd>
+        <dt>13 Empirically-Backed No BS Form Design Best Practices by <a href="https://twitter.com/iamalexbirkett" target="_blank">Alex Birkett</a></dt>
+        <dd>
+            <a href="https://conversionxl.com/blog/form-design-best-practices/" target="_blank">https://conversionxl.com/blog/form-design-best-practices/</a>
+        </dd>
+        <dt>Website Forms Usability: Top 10 Recommendations by <a href="https://twitter.com/kwhitenton" target="_blank">Kathryn Whitenton</a></dt>
+        <dd>
+            <a href="https://www.nngroup.com/articles/web-form-design/" target="_blank">https://www.nngroup.com/articles/web-form-design/</a>
+        </dd>
+        <dt>Web Form Design Best Practices: 5 Useful UI Patterns by <a href="https://twitter.com/benthinkin" target="_blank">Ben Gremillion</a></dt>
+        <dd>
+            <a href="https://www.uxpin.com/studio/blog/web-form-design-best-practices-5-useful-ui-patterns-2/" target="_blank">https://www.uxpin.com/studio/blog/web-form-design-best-practices-5-useful-ui-patterns-2/</a>
+        </dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.button {
+    padding-left: $input-padding;
+    padding-right: $input-padding;
+    height: $input-height;
+
+    border-style: solid;
+    border-radius: $input-border-radius;
+
+    font-family: $input-font;
+    font-size: $input-font-size;
+
+    cursor: pointer;
+}
+
+.button-pill {
+    padding-left: $button-pill-padding;
+    padding-right: $button-pill-padding;
+    border-radius: $input-height;
+}
+
+@each $key, $val in $buttons {
+    $background: nth($val, 1);
+    $color: nth($val, 2);
+    .button-#{$key} {
+        background: $background;
+        border-color: $background;
+
+        color: $color;
+        &:hover {
+            background: darken($background, 4);
+            border-color: darken($background, 4);
+            @if $key == link {
+                text-decoration: underline;
+                
+            }
+        }
+    }
+}
+
+@each $key, $val in $buttons {
+    $background: nth($val, 1);
+    $color: nth($val, 2);
+    .button-#{$key}-bordered {
+        background: transparent;
+        border-color: $background;
+
+        color: $background;
+        &:hover {
+            background: $background;
+            color: $color;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+[type="range"].input-default {
+    border: 0;
+
+    // Track
+    // Separated to work on Chrome Mac Os
+    &::-webkit-slider-runnable-track {
+        height: 5px;
+        background: $input-border-color;
+        border-radius: 4px;
+    }
+    &::-moz-range-track {
+        height: 5px;
+        background: $input-border-color;
+        border-radius: 4px;
+    }
+    &::-ms-track {
+        height: 5px;
+        background: $input-border-color;
+        border-radius: 4px;
+    }
+
+    // Thumb
+    &::-webkit-slider-thumb {
+        margin-top: -6px;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: $input-border-color-focus;
+        -webkit-appearance: none;
+
+        transition: all .2s ease-in-out;
+    }
+    &::-moz-range-thumb {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        border-style: none;
+        background: $input-border-color-focus;
+    }
+    &::-ms-thumb {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: $input-border-color-focus;
+        -webkit-appearance: none;
+    }
+}

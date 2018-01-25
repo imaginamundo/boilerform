@@ -8,177 +8,109 @@
     <link rel="stylesheet" href="assets/style.min.css">
 </head>
 <body>
-    <h1>Boilerform</h1>
+    <header>
+        <h1>Boilerform</h1>
+        <p>CSS framework for simple forms</p>
+        <nav class="menu">
+            <p>
+                <a href="index.html">Input types</a>
+                <a href="use-cases.html">Samples</a>
+                <a href="best-practices.html">Best practices</a>
+            </p>
+        </nav>
+    </header>
 
-    <h2>Types</h2>
+    <hr />
 
-    <h3>Input text</h3>
+    <h2>Input types</h2>
+    <h3>Text</h3>
     <p>
-        <label>
-            <span class="label">Label</span>
-            <input type="text" placeholder="input text">
-        </label>
+        <input type="text" placeholder="Placeholder" class="input-default" />
     </p>
 
     <h3>Select</h3>
     <p>
-        <label>
-            <span class="label">Label</span>
-            <select>
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-            </select>
-        </label>
-    </p>
-
-    <h3>Input range</h3>
-    <p>
-        <label>
-            <span class="label">Label</span>
-            <input type="range">
-        </label>
-    </p>
-
-    <h3>Checkbox & Radio</h3>
-    <p>
-        <label>
-            <input type="checkbox" name="checkbox">
-            <span>Label</span>
-        </label>
-    </p>
-    <p>
-        <label>
-            <input type="radio" name="radio">
-            <span>Label</span>
-        </label>
-    </p>
-
-    <h3>Button</h3>
-    <p>
-        <button>Label</button>
+        <select class="input-default">
+            <option disabled selected>Placeholder</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
     </p>
 
     <h3>Textarea</h3>
-    <p>Always width 100%.</p>
+    <p>
+        <textarea cols="30" rows="10" class="input-default"></textarea>
+    </p>
+
+    <h3>Checkbox</h3>
     <p>
         <label>
-            <span class="label">Label</span>
-            <textarea></textarea>
+            <input type="checkbox" class="input-default" />
+            Label
         </label>
     </p>
-
-    <h2>Use cases</h2>
-    <h3>Inline</h3>
-    <p>Add <code>margin-right</code> after each element ignoring last-child.</p>
-    <p>Pros: Can be used in header to simple forms.</p>
-    <p>Cons: Breaks easily in responsive.</p>
-    <p class="input-inline">
-        <label>
-            <input type="text" placeholder="Username">
-        </label>
-        <label>
-            <input type="password" placeholder="Password">
-        </label>
-        <label>
-            <input type="checkbox">
-            <span>Remember me</span>
-        </label>
-        <button>Login</button>
-    </p>
-
-    <h3>Block</h3>
-    <p>Use <code>p</code> default margin.</p>
-    <p>Block input with class <code>.input-block</code> on parent</p>
-    <p>Best for complex forms and mobile.</p>
-    <div class="form-block">
-        <p>
-            <label>
-                <span class="label">Username</span>
-                <input type="text">
-            </label>
-        </p>
-        <p>
-            <label>
-                <span class="label">Password</span>
-                <input type="password">
-                <small class="label-helper">Your password must be at least 4 characters.</small>
-            </label>
-        </p>
-        <p>
-            <label class="input-block">
-                <span class="label">Site</span>
-                <input type="site">
-            </label>
-        </p>
-        <p>
-            <label>
-                <input type="checkbox">
-                <span>Remember me</span>
-            </label>
-        </p>
-        <p>
-            <button>Login</button>
-        </p>
-    </div>
-
-    <h3>Table</h3>
-    <p>Need fix, tried to do exactly what flex did.</p>
-    <p class="input-table">
-        <label>
-            <input type="text" placeholder="User">
-        </label>
-        <label>
-            <input type="password" placeholder="Password">
-        </label>
-        <label>
-            <input type="checkbox">
-            <span>Remember me</span>
-        </label>
-        <span class="input-block">
-            <button>Login</button>
-        </span>
-    </p>
-
-    <h3>Flex</h3>
-    <p>Wrap every element you want to stretch equaly inside a <code>label</code>.</p>
-    <p class="input-flex">
-        <label>
-            <input type="text" placeholder="User">
-        </label>
-        <label>
-            <input type="password" placeholder="Password">
-        </label>
-        <label>
-            <input type="checkbox">
-            <span>Remember me</span>
-        </label>
-        <button>Login</button>
-    </p>
-
-    <h2>Input feedback</h2>
-    <h3>Inline</h3>
-    <p>Inline forms doen't work well with <code>.label-helper</code>, but you can use <code>.input-error</code> to create a visual feedback from error.</p>
     <p>
         <label>
-            <span class="label">Username</span>
-            <input type="text" class="input-error">
-            <span class="label-error">Error label</span>
+            <input type="checkbox" class="input-default" />
+            Label
         </label>
     </p>
 
-    <h3>Block</h3>
-    <p>Give hints to the user, recommended short texts.</p>
-    <p>Best for complex forms and mobile.</p>
-    <div class="form-block">
-        <p>
-            <label>
-                <span class="label">Username</span>
-                <input type="text" class="input-error">
-                <span class="label-error">Error label</span>
-                <span class="label-helper">Helper label</span>
-            </label>
-        </p>
-    </div>
+    <h3>Radio</h3>
+    <p>
+        <label>
+            <input type="radio" name="radio" class="input-default" />
+            Label
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="radio" name="radio" class="input-default" />
+            Label
+        </label>
+    </p>
+
+    <h3>Range</h3>
+    <p>
+        <input type="range" class="input-default" />
+    </p>
+    <h3>Button</h3>
+    <p>
+        <button class="button button-primary">Primary</button>
+        <button class="button button-secondary">Secondary</button>
+        <button class="button button-success">Success</button>
+        <button class="button button-danger">Danger</button>
+        <button class="button button-warning">Warning</button>
+        <button class="button button-info">Info</button>
+        <button class="button button-light">Light</button>
+        <button class="button button-dark">Dark</button>
+        <button class="button button-link">Link</button>
+    </p>
+
+    <h3>Border button</h3>
+    <p>
+        <button class="button button-primary-bordered">Primary</button>
+        <button class="button button-secondary-bordered">Secondary</button>
+        <button class="button button-success-bordered">Success</button>
+        <button class="button button-danger-bordered">Danger</button>
+        <button class="button button-warning-bordered">Warning</button>
+        <button class="button button-info-bordered">Info</button>
+        <button class="button button-light-bordered">Light</button>
+        <button class="button button-dark-bordered">Dark</button>
+        <button class="button button-link-bordered">Link</button>
+    </p>
+
+    <h3>Button pill</h3>
+    <p>
+        <button class="button button-pill button-primary">Primary</button>
+        <button class="button button-pill button-secondary">Secondary</button>
+        <button class="button button-pill button-success">Success</button>
+        <button class="button button-pill button-danger">Danger</button>
+        <button class="button button-pill button-warning">Warning</button>
+        <button class="button button-pill button-info">Info</button>
+        <button class="button button-pill button-light">Light</button>
+        <button class="button button-pill button-dark">Dark</button>
+        <button class="button button-pill button-link">Link</button>
+    </p>
 </body>
 </html>

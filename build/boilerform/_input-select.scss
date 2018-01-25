@@ -1,0 +1,7 @@
+select.input-default {
+    background: $input-select-caret;
+    background-size: $input-select-caret-size;
+    background-repeat: no-repeat;
+    background-position: calc(100% - #{$input-padding}) center;
+    padding-right: calc((#{$input-padding} * 2) + #{$input-select-caret-size});
+}

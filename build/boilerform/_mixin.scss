@@ -9,6 +9,9 @@
            -moz-appearance: none;
                 appearance: none;
     }
+    ::-ms-expand {
+        display: none;
+    }
     &:focus {
         outline: none;
     }

@@ -226,6 +226,8 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
+  .input-default ::-ms-expand {
+    display: none; }
   .input-default:focus {
     outline: none; }
   .input-default:focus, .input-default:checked {

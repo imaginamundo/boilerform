@@ -1,0 +1,17 @@
+[type="file"].input-default {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    &::-webkit-file-upload-button {
+        @include button-style();
+        background: nth(map-get($buttons, primary), 1);
+        border-color: nth(map-get($buttons, primary), 1);
+        color: nth(map-get($buttons, primary), 2);
+    }
+    &::-ms-browse {
+        @include button-style();
+        background: tomato;
+        border-color: tomato;
+        color: nth(map-get($buttons, primary), 2);
+    }
+}

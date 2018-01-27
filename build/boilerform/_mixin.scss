@@ -1,4 +1,6 @@
 @mixin clear-input-style() {
+    margin: 0;
+    vertical-align: middle;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -28,5 +30,25 @@
     &:focus,
     &:checked {
         border-color: $input-border-color-focus;
+    }
+}
+
+@mixin button-style() {
+    padding-left: $input-padding;
+    padding-right: $input-padding;
+    margin: 0;
+    height: $input-height;
+
+    border-style: solid;
+    border-radius: $input-border-radius;
+    border-width: $input-border-size;
+
+    font-family: $input-font;
+    font-size: $input-font-size;
+
+    cursor: pointer;
+    vertical-align: middle;
+    &:focus {
+        outline: none;
     }
 }

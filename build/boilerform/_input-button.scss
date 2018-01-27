@@ -1,15 +1,5 @@
 .button {
-    padding-left: $input-padding;
-    padding-right: $input-padding;
-    height: $input-height;
-
-    border-style: solid;
-    border-radius: $input-border-radius;
-
-    font-family: $input-font;
-    font-size: $input-font-size;
-
-    cursor: pointer;
+    @include button-style();
 }
 
 .button-pill {
@@ -27,17 +17,21 @@
 
         color: $color;
         &:hover {
-            background: darken($background, 4);
-            border-color: darken($background, 4);
+            background: darken($background, 3);
+            border-color: darken($background, 3);
             @if $key == link {
                 text-decoration: underline;
                 
             }
         }
+        &:active {
+            background: darken($background, 6);
+            border-color: darken($background, 6);
+        }
     }
 }
 
-@each $key, $val in $buttons {
+@each $key, $val in $buttons-outline {
     $background: nth($val, 1);
     $color: nth($val, 2);
     .button-#{$key}-outline {
@@ -48,6 +42,10 @@
         &:hover {
             background: $background;
             color: $color;
+        }
+        &:active {
+            background: darken($background, 3);
+            border-color: darken($background, 3);
         }
     }
 }

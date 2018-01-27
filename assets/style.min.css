@@ -1,4 +1,214 @@
+.button {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+  height: 3em;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 2px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  vertical-align: middle; }
+  .button:focus {
+    outline: none; }
+
+.button-pill {
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  border-radius: 3em; }
+
+.button-primary {
+  background: #0af;
+  border-color: #0af;
+  color: #fff; }
+  .button-primary:hover {
+    background: #00a0f0;
+    border-color: #00a0f0; }
+  .button-primary:active {
+    background: #0096e0;
+    border-color: #0096e0; }
+
+.button-secondary {
+  background: #666;
+  border-color: #666;
+  color: #fff; }
+  .button-secondary:hover {
+    background: #5e5e5e;
+    border-color: #5e5e5e; }
+  .button-secondary:active {
+    background: #575757;
+    border-color: #575757; }
+
+.button-success {
+  background: #0b0;
+  border-color: #0b0;
+  color: #fff; }
+  .button-success:hover {
+    background: #00ac00;
+    border-color: #00ac00; }
+  .button-success:active {
+    background: #009c00;
+    border-color: #009c00; }
+
+.button-danger {
+  background: #f00;
+  border-color: #f00;
+  color: #fff; }
+  .button-danger:hover {
+    background: #f00000;
+    border-color: #f00000; }
+  .button-danger:active {
+    background: #e00000;
+    border-color: #e00000; }
+
+.button-warning {
+  background: #fd0;
+  border-color: #fd0;
+  color: #000; }
+  .button-warning:hover {
+    background: #f0d000;
+    border-color: #f0d000; }
+  .button-warning:active {
+    background: #e0c200;
+    border-color: #e0c200; }
+
+.button-info {
+  background: #0df;
+  border-color: #0df;
+  color: #fff; }
+  .button-info:hover {
+    background: #00d0f0;
+    border-color: #00d0f0; }
+  .button-info:active {
+    background: #00c2e0;
+    border-color: #00c2e0; }
+
+.button-light {
+  background: #f8f8f8;
+  border-color: #f8f8f8;
+  color: #000; }
+  .button-light:hover {
+    background: #f0f0f0;
+    border-color: #f0f0f0; }
+  .button-light:active {
+    background: #e9e9e9;
+    border-color: #e9e9e9; }
+
+.button-dark {
+  background: #333;
+  border-color: #333;
+  color: #fff; }
+  .button-dark:hover {
+    background: #2b2b2b;
+    border-color: #2b2b2b; }
+  .button-dark:active {
+    background: #242424;
+    border-color: #242424; }
+
+.button-link {
+  background: transparent;
+  border-color: transparent;
+  color: blue; }
+  .button-link:hover {
+    background: transparent;
+    border-color: transparent;
+    text-decoration: underline; }
+  .button-link:active {
+    background: transparent;
+    border-color: transparent; }
+
+.button-primary-outline {
+  background: transparent;
+  border-color: #0af;
+  color: #0af; }
+  .button-primary-outline:hover {
+    background: #0af;
+    color: #fff; }
+  .button-primary-outline:active {
+    background: #00a0f0;
+    border-color: #00a0f0; }
+
+.button-secondary-outline {
+  background: transparent;
+  border-color: #666;
+  color: #666; }
+  .button-secondary-outline:hover {
+    background: #666;
+    color: #fff; }
+  .button-secondary-outline:active {
+    background: #5e5e5e;
+    border-color: #5e5e5e; }
+
+.button-success-outline {
+  background: transparent;
+  border-color: #0b0;
+  color: #0b0; }
+  .button-success-outline:hover {
+    background: #0b0;
+    color: #fff; }
+  .button-success-outline:active {
+    background: #00ac00;
+    border-color: #00ac00; }
+
+.button-danger-outline {
+  background: transparent;
+  border-color: #f00;
+  color: #f00; }
+  .button-danger-outline:hover {
+    background: #f00;
+    color: #fff; }
+  .button-danger-outline:active {
+    background: #f00000;
+    border-color: #f00000; }
+
+.button-warning-outline {
+  background: transparent;
+  border-color: #fd0;
+  color: #fd0; }
+  .button-warning-outline:hover {
+    background: #fd0;
+    color: #000; }
+  .button-warning-outline:active {
+    background: #f0d000;
+    border-color: #f0d000; }
+
+.button-info-outline {
+  background: transparent;
+  border-color: #0df;
+  color: #0df; }
+  .button-info-outline:hover {
+    background: #0df;
+    color: #fff; }
+  .button-info-outline:active {
+    background: #00d0f0;
+    border-color: #00d0f0; }
+
+.button-light-outline {
+  background: transparent;
+  border-color: #f8f8f8;
+  color: #f8f8f8; }
+  .button-light-outline:hover {
+    background: #f8f8f8;
+    color: #000; }
+  .button-light-outline:active {
+    background: #f0f0f0;
+    border-color: #f0f0f0; }
+
+.button-dark-outline {
+  background: transparent;
+  border-color: #333;
+  color: #333; }
+  .button-dark-outline:hover {
+    background: #333;
+    color: #fff; }
+  .button-dark-outline:active {
+    background: #2b2b2b;
+    border-color: #2b2b2b; }
+
 .input-default {
+  margin: 0;
+  vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -43,7 +253,7 @@ textarea.input-default {
   padding: 1em; }
 
 select.input-default {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="black" d="M0 33h100L50 85z"/></svg>');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path fill="#000" d="M0 33h100L50 85z"/></svg>');
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) center;
@@ -84,165 +294,44 @@ select.input-default {
     background: #0af;
     -webkit-appearance: none; }
 
-.button {
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 3em;
-  border-style: solid;
-  border-radius: 4px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  cursor: pointer; }
-
-.button-pill {
-  padding-left: 1.3em;
-  padding-right: 1.3em;
-  border-radius: 3em; }
-
-.button-primary {
-  background: #0af;
-  border-color: #0af;
-  color: #fff; }
-  .button-primary:hover {
-    background: #009ceb;
-    border-color: #009ceb; }
-
-.button-secondary {
-  background: #666;
-  border-color: #666;
-  color: #fff; }
-  .button-secondary:hover {
-    background: #5c5c5c;
-    border-color: #5c5c5c; }
-
-.button-success {
-  background: #0b0;
-  border-color: #0b0;
-  color: #fff; }
-  .button-success:hover {
-    background: #00a700;
-    border-color: #00a700; }
-
-.button-danger {
-  background: #f00;
-  border-color: #f00;
-  color: #fff; }
-  .button-danger:hover {
-    background: #eb0000;
-    border-color: #eb0000; }
-
-.button-warning {
-  background: #fd0;
-  border-color: #fd0;
-  color: #000; }
-  .button-warning:hover {
-    background: #ebcb00;
-    border-color: #ebcb00; }
-
-.button-info {
-  background: #0df;
-  border-color: #0df;
-  color: #fff; }
-  .button-info:hover {
-    background: #00cbeb;
-    border-color: #00cbeb; }
-
-.button-light {
-  background: #f8f8f8;
-  border-color: #f8f8f8;
-  color: #000; }
-  .button-light:hover {
-    background: #eeeeee;
-    border-color: #eeeeee; }
-
-.button-dark {
-  background: #333;
-  border-color: #333;
-  color: #fff; }
-  .button-dark:hover {
-    background: #292929;
-    border-color: #292929; }
-
-.button-link {
-  background: transparent;
-  border-color: transparent;
-  color: blue; }
-  .button-link:hover {
-    background: transparent;
-    border-color: transparent;
-    text-decoration: underline; }
-
-.button-primary-outline {
-  background: transparent;
-  border-color: #0af;
-  color: #0af; }
-  .button-primary-outline:hover {
+[type="file"].input-default {
+  border: 0;
+  border-radius: 0;
+  padding: 0; }
+  [type="file"].input-default::-webkit-file-upload-button {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+    height: 3em;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    vertical-align: middle;
     background: #0af;
+    border-color: #0af;
     color: #fff; }
-
-.button-secondary-outline {
-  background: transparent;
-  border-color: #666;
-  color: #666; }
-  .button-secondary-outline:hover {
-    background: #666;
+    [type="file"].input-default::-webkit-file-upload-button:focus {
+      outline: none; }
+  [type="file"].input-default::-ms-browse {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+    height: 3em;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    vertical-align: middle;
+    background: tomato;
+    border-color: tomato;
     color: #fff; }
-
-.button-success-outline {
-  background: transparent;
-  border-color: #0b0;
-  color: #0b0; }
-  .button-success-outline:hover {
-    background: #0b0;
-    color: #fff; }
-
-.button-danger-outline {
-  background: transparent;
-  border-color: #f00;
-  color: #f00; }
-  .button-danger-outline:hover {
-    background: #f00;
-    color: #fff; }
-
-.button-warning-outline {
-  background: transparent;
-  border-color: #fd0;
-  color: #fd0; }
-  .button-warning-outline:hover {
-    background: #fd0;
-    color: #000; }
-
-.button-info-outline {
-  background: transparent;
-  border-color: #0df;
-  color: #0df; }
-  .button-info-outline:hover {
-    background: #0df;
-    color: #fff; }
-
-.button-light-outline {
-  background: transparent;
-  border-color: #f8f8f8;
-  color: #f8f8f8; }
-  .button-light-outline:hover {
-    background: #f8f8f8;
-    color: #000; }
-
-.button-dark-outline {
-  background: transparent;
-  border-color: #333;
-  color: #333; }
-  .button-dark-outline:hover {
-    background: #333;
-    color: #fff; }
-
-.button-link-outline {
-  background: transparent;
-  border-color: transparent;
-  color: transparent; }
-  .button-link-outline:hover {
-    background: transparent;
-    color: blue; }
+    [type="file"].input-default::-ms-browse:focus {
+      outline: none; }
 
 .input-block {
   display: block;
@@ -275,6 +364,22 @@ select.input-default {
 
 .input-default + .input-help {
   margin-top: .5em; }
+
+.button-invisible {
+  border-right: 0;
+  border-radius: 4px 0 0 4px; }
+  .button-invisible + .button {
+    background: transparent;
+    border-color: #ccc;
+    border-left: 0;
+    border-radius: 0 4px 4px 0; }
+    .button-invisible + .button:hover {
+      background: rgba(0, 0, 0, 0.05); }
+    .button-invisible + .button:active {
+      color: #000;
+      background: rgba(0, 0, 0, 0.1); }
+  .button-invisible:focus + .button {
+    border-color: #0af; }
 
 body {
   padding: 12px;

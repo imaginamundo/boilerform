@@ -9,7 +9,7 @@
            -moz-appearance: none;
                 appearance: none;
     }
-    ::-ms-expand {
+    &::-ms-expand {
         display: none;
     }
     &:focus {

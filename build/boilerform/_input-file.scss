@@ -10,8 +10,8 @@
     }
     &::-ms-browse {
         @include button-style();
-        background: tomato;
-        border-color: tomato;
+        background: nth(map-get($buttons, primary), 1);
+        border-color: nth(map-get($buttons, primary), 1);
         color: nth(map-get($buttons, primary), 2);
     }
 }

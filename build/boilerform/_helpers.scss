@@ -2,11 +2,9 @@
     display: block;
     width: 100%;
 }
-
 .input-help {
     display: block;
 }
-
 .input-success {
     border-color: $input-border-success;
     + .input-help {
@@ -31,7 +29,6 @@
         }
     }
 }
-
 .input-label {
     + .input-default {
         margin-top: .5em;
@@ -48,7 +45,6 @@
         
     }
 }
-
 .button-invisible {
     border-right: 0;
     border-radius: $input-border-radius 0 0 $input-border-radius;

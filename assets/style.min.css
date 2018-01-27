@@ -293,8 +293,7 @@ select.input-default {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background: #0af;
-    -webkit-appearance: none; }
+    background: #0af; }
 
 [type="file"].input-default {
   border: 0;
@@ -329,8 +328,8 @@ select.input-default {
     font-size: 1rem;
     cursor: pointer;
     vertical-align: middle;
-    background: tomato;
-    border-color: tomato;
+    background: #0af;
+    border-color: #0af;
     color: #fff; }
     [type="file"].input-default::-ms-browse:focus {
       outline: none; }

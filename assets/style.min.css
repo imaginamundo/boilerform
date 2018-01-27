@@ -255,7 +255,7 @@ textarea.input-default {
   padding: 1em; }
 
 select.input-default {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#000"><polygon points="0,33 100,33 50,85"/></svg>');
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWd odD0iMTAwIj48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMCAzM2gxMDBMNTAgODV6Ii8+PC9zdmc+");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: calc(100% - 1em) center;

@@ -20,6 +20,8 @@
 @mixin input-style() {
     padding-right: $input-padding;
     padding-left: $input-padding;
+    max-width: 100%;
+    min-height: $input-height;
     height: $input-height;
     box-sizing: border-box;
 
@@ -37,8 +39,10 @@
 }
 
 @mixin button-style() {
-    padding-left: $input-padding;
+    padding-top: 0;
     padding-right: $input-padding;
+    padding-bottom: 0;
+    padding-left: $input-padding;
     margin: 0;
     height: $input-height;
 

@@ -1,6 +1,8 @@
 .button {
-  padding-left: 1em;
+  padding-top: 0;
   padding-right: 1em;
+  padding-bottom: 0;
+  padding-left: 1em;
   margin: 0;
   height: 3em;
   border-style: solid;
@@ -214,6 +216,8 @@
   appearance: none;
   padding-right: 1em;
   padding-left: 1em;
+  max-width: 100%;
+  min-height: 3em;
   height: 3em;
   box-sizing: border-box;
   border-style: solid;
@@ -327,8 +331,10 @@ select.input-default {
   border-radius: 0;
   padding: 0; }
   [type="file"].input-default::-webkit-file-upload-button {
-    padding-left: 1em;
+    padding-top: 0;
     padding-right: 1em;
+    padding-bottom: 0;
+    padding-left: 1em;
     margin: 0;
     height: 3em;
     border-style: solid;
@@ -344,8 +350,10 @@ select.input-default {
     [type="file"].input-default::-webkit-file-upload-button:focus {
       outline: none; }
   [type="file"].input-default::-ms-browse {
-    padding-left: 1em;
+    padding-top: 0;
     padding-right: 1em;
+    padding-bottom: 0;
+    padding-left: 1em;
     margin: 0;
     height: 3em;
     border-style: solid;

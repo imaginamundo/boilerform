@@ -43,7 +43,7 @@
     padding-bottom: 0;
     padding-left: $input-padding;
     margin: 0;
-    height: $input-height;
+    min-height: $input-height;
 
     border-style: solid;
     border-radius: $input-border-radius;

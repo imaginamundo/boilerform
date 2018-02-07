@@ -29,6 +29,8 @@
   font-size: 1rem; }
   .button-unstyled:focus {
     outline: none; }
+  .button-unstyled:active {
+    color: #000; }
 
 .button-primary {
   background: #0af;

@@ -18,6 +18,9 @@
     &:focus {
         outline: none;
     }
+    &:active {
+        color: $input-font-color;
+    }
 }
 
 @each $key, $val in $buttons {

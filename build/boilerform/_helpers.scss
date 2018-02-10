@@ -29,22 +29,13 @@
         }
     }
 }
-.input-label {
-    + .input-default {
-        margin-top: .5em;
-    }
-    + br {
-        + .input-default {
-            margin-top: .5em;
-        }
-    }
-}
 .input-default {
     + .input-help {
         margin-top: .5em;
         
     }
 }
+
 .button-invisible {
     border-right: 0;
     border-radius: $input-border-radius 0 0 $input-border-radius;

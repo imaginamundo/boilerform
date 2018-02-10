@@ -1,0 +1,35 @@
+.input-label {
+    + .input-default {
+        margin-top: .5em;
+    }
+    + br {
+        + .input-default {
+            margin-top: .5em;
+        }
+    }
+}
+
+.input-label-invisible {
+    display: inline-flex;
+    .input-label {
+        padding-left: $input-padding;
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: $input-border-size;
+        border-color: $input-border-color;
+        border-radius: $input-border-radius 0 0 $input-border-radius;
+        border-right: none;
+        line-height: calc(#{$input-height} - #{$input-border-size} * 2);
+    }
+    .input-default {
+        order: 1;
+        border-radius: 0 $input-border-radius $input-border-radius 0;
+        border-left: none;
+        &:focus,
+        &:active {
+            + .input-label {
+                border-color: $input-border-color-focus;
+            }
+        }
+    }
+}

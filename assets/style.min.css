@@ -255,33 +255,9 @@
   margin-top: .5em; }
 
 .input-label-invisible {
-  position: relative;
-  display: inline-block; }
+  display: inline-flex; }
   .input-label-invisible .input-label {
     display: inline-block;
-    padding-left: 1em;
-    vertical-align: middle;
-    line-height: 3em; }
-    .input-label-invisible .input-label + .input-default {
-      margin-top: 0;
-      border: none; }
-      .input-label-invisible .input-label + .input-default:focus + .input-label-wrap, .input-label-invisible .input-label + .input-default:active + .input-label-wrap {
-        border-color: #0af; }
-  .input-label-invisible .input-label-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #ccc;
-    border-radius: 4px; }
-
-.input-label-invisible-2 {
-  display: inline-flex; }
-  .input-label-invisible-2 .input-label {
     padding-left: 1em;
     box-sizing: border-box;
     border-style: solid;
@@ -290,11 +266,11 @@
     border-radius: 4px 0 0 4px;
     border-right: none;
     line-height: calc(3em - 2px * 2); }
-  .input-label-invisible-2 .input-default {
+  .input-label-invisible .input-default {
     order: 1;
     border-radius: 0 4px 4px 0;
     border-left: none; }
-    .input-label-invisible-2 .input-default:focus + .input-label, .input-label-invisible-2 .input-default:active + .input-label {
+    .input-label-invisible .input-default:focus + .input-label, .input-label-invisible .input-default:active + .input-label {
       border-color: #0af; }
 
 [type="radio"].input-default,

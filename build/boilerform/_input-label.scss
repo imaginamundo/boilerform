@@ -12,6 +12,7 @@
 .input-label-invisible {
     display: inline-flex;
     .input-label {
+        display: inline-block;
         padding-left: $input-padding;
         box-sizing: border-box;
         border-style: solid;

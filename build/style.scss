@@ -10,6 +10,31 @@ body {
 header {
     text-align: center;
 }
+dt,
+dd {
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 1em;
+    + dt {
+        margin-top: 1.5em;
+    }
+}
+.button-invisible-wrap {
+    display: inline-flex;
+    margin: 0;
+    .input-default {
+        width: 100%;
+    }
+    .button {
+        flex-shrink: 0;
+    }
+}
+
 code,
 .code {
     padding: 2px 4px;
@@ -67,20 +92,6 @@ code,
         + label {
             margin-left: 2em;
         }
-    }
-}
-dt,
-dd {
-    margin-top: 1em; 
-    margin-bottom: 1em; 
-}
-dt {
-    font-weight: bold;
-}
-dd {
-    margin-left: 1em;
-    + dt {
-        margin-top: 1.5em;
     }
 }
 

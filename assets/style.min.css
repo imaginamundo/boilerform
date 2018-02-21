@@ -457,6 +457,27 @@ body {
 header {
   text-align: center; }
 
+dt,
+dd {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 1em; }
+  dd + dt {
+    margin-top: 1.5em; }
+
+.button-invisible-wrap {
+  display: inline-flex;
+  margin: 0; }
+  .button-invisible-wrap .input-default {
+    width: 100%; }
+  .button-invisible-wrap .button {
+    flex-shrink: 0; }
+
 code,
 .code {
   padding: 2px 4px;
@@ -502,19 +523,6 @@ code,
 
 .inline-label label + label {
   margin-left: 2em; }
-
-dt,
-dd {
-  margin-top: 1em;
-  margin-bottom: 1em; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin-left: 1em; }
-  dd + dt {
-    margin-top: 1.5em; }
 
 @media (min-width: 900px) {
   .best-practice {

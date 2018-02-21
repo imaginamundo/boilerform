@@ -3,12 +3,14 @@
     border-radius: 0;
     padding: 0;
     &::-webkit-file-upload-button {
+        @include clear-button-style();
         @include button-style();
         background: nth(map-get($buttons, primary), 1);
         border-color: nth(map-get($buttons, primary), 1);
         color: nth(map-get($buttons, primary), 2);
     }
     &::-ms-browse {
+        @include clear-button-style();
         @include button-style();
         background: nth(map-get($buttons, primary), 1);
         border-color: nth(map-get($buttons, primary), 1);

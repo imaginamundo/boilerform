@@ -1,4 +1,5 @@
 .button {
+    @include clear-button-style();
     @include button-style();
 }
 

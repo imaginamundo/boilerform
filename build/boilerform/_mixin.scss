@@ -37,12 +37,18 @@
     }
 }
 
+@mixin clear-button-style() {
+    margin: 0;
+    padding-right: $input-padding;
+    padding-left: $input-padding;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
 @mixin button-style() {
     padding-top: 0;
-    padding-right: $input-padding;
     padding-bottom: 0;
-    padding-left: $input-padding;
-    margin: 0;
     min-height: $input-height;
 
     border-style: solid;

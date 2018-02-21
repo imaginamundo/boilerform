@@ -13,8 +13,10 @@
     display: inline-flex;
     .input-label {
         display: inline-block;
+        padding-right: $input-padding;
         padding-left: $input-padding;
         box-sizing: border-box;
+        background: $invisible-label-background;
         border-style: solid;
         border-width: $input-border-size;
         border-color: $input-border-color;

@@ -35,28 +35,3 @@
         
     }
 }
-
-.button-invisible {
-    border-right: 0;
-    border-radius: $input-border-radius 0 0 $input-border-radius;
-    + .button {
-        @include clear-button-style();
-        -webkit-appearence: none;
-        background: $input-background;
-        border-color: $input-border-color;
-        border-left: 0;
-        border-radius: 0 $input-border-radius $input-border-radius 0;
-        &:hover {
-            background: rgba(0, 0, 0, .05);
-        }
-        &:active {
-            color: $input-font-color;
-            background: rgba(0, 0, 0, .1);
-        }
-    }
-    &:focus {
-        + .button {
-            border-color: $input-border-color-focus;
-        }
-    }
-}

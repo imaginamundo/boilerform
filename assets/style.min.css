@@ -36,6 +36,30 @@
   .button-unstyled:active {
     color: #000; }
 
+.button-invisible {
+  border-right: 0;
+  border-radius: 4px 0 0 4px; }
+  .button-invisible + .button {
+    margin: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearence: none;
+    background: transparent;
+    border-color: #ccc;
+    border-left: 0;
+    border-radius: 0 4px 4px 0; }
+    .button-invisible + .button:hover {
+      background: rgba(0, 0, 0, 0.05); }
+    .button-invisible + .button:active {
+      color: #000;
+      background: rgba(0, 0, 0, 0.1); }
+  .button-invisible:focus + .button {
+    border-color: #0af; }
+
 .button-primary {
   background: #0af;
   border-color: #0af;
@@ -262,8 +286,10 @@
   display: inline-flex; }
   .input-label-invisible .input-label {
     display: inline-block;
+    padding-right: 1em;
     padding-left: 1em;
     box-sizing: border-box;
+    background: #f1f1f1;
     border-style: solid;
     border-width: 2px;
     border-color: #ccc;
@@ -442,30 +468,6 @@ select.input-default {
 
 .input-default + .input-help {
   margin-top: .5em; }
-
-.button-invisible {
-  border-right: 0;
-  border-radius: 4px 0 0 4px; }
-  .button-invisible + .button {
-    margin: 0;
-    padding-right: 1em;
-    padding-left: 1em;
-    -webkit-border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-appearence: none;
-    background: transparent;
-    border-color: #ccc;
-    border-left: 0;
-    border-radius: 0 4px 4px 0; }
-    .button-invisible + .button:hover {
-      background: rgba(0, 0, 0, 0.05); }
-    .button-invisible + .button:active {
-      color: #000;
-      background: rgba(0, 0, 0, 0.1); }
-  .button-invisible:focus + .button {
-    border-color: #0af; }
 
 body {
   padding: 12px;

@@ -25,8 +25,6 @@
 }
 
 .button-invisible {
-    border-right: 0;
-    border-radius: $input-border-radius 0 0 $input-border-radius;
     + .button {
         @include clear-button-style();
         -webkit-appearence: none;
@@ -46,6 +44,10 @@
         + .button {
             border-color: $input-border-color-focus;
         }
+    }
+    &.input-default {
+        border-right: 0;
+        border-radius: $input-border-radius 0 0 $input-border-radius;
     }
 }
 

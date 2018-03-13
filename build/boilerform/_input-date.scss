@@ -1,0 +1,6 @@
+[type="date"].input-default {
+    display: inline-flex;
+    &:invalid::-webkit-datetime-edit {
+        color: $input-background;
+    }
+}

@@ -1,4 +1,7 @@
 textarea.input-default {
     height: auto;
     padding: $input-padding;
+    &::-webkit-resizer {
+        display: none;
+    }
 }

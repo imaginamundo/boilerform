@@ -35,6 +35,16 @@
     &:checked {
         border-color: $input-border-color-focus;
     }
+    &:-ms-input-placeholder {
+        color: $input-placeholder;
+    }
+    &::-moz-placeholder {
+        color: $input-placeholder;
+        opacity: 1;
+    }
+    &::-webkit-input-placeholder {
+        color: $input-placeholder;
+    }
 }
 
 @mixin clear-button-style() {

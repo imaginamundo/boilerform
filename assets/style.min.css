@@ -277,13 +277,20 @@
     outline: none; }
   .input-default:focus, .input-default:checked {
     border-color: #0af; }
+  .input-default:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.5); }
+  .input-default::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1; }
+  .input-default::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5); }
 
 [type="date"].input-default {
   display: inline-flex; }
   [type="date"].input-default:invalid::-webkit-datetime-edit {
     color: transparent; }
 
-.input-label + .input-default {
+.input-label + .input-block {
   margin-top: .5em; }
 
 .input-label + br + .input-default {
@@ -403,6 +410,26 @@ select.input-default {
   border: 0;
   border-radius: 0;
   padding: 0; }
+  [type="file"].input-default button {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 1em;
+    padding-left: 1em;
+    min-height: 3em;
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    vertical-align: middle; }
+    [type="file"].input-default button:focus {
+      outline: none; }
   [type="file"].input-default::-webkit-file-upload-button {
     padding-top: 0;
     padding-bottom: 0;

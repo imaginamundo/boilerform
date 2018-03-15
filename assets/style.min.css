@@ -336,7 +336,8 @@
 
 textarea.input-default {
   height: auto;
-  padding: 1em; }
+  padding: 1em;
+  resize: none; }
 
 select.input-default {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWd odD0iMTAwIj48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMCAzM2gxMDBMNTAgODV6Ii8+PC9zdmc+");

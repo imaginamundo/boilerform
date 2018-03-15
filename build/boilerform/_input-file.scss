@@ -2,9 +2,9 @@
     border: 0;
     border-radius: 0;
     padding: 0;
-    button {
-        @include clear-button-style();
-        @include button-style();
+    > * {
+        @include clear-button-style;
+        @include button-style;
     }
     &::-webkit-file-upload-button {
         @include clear-button-style();
